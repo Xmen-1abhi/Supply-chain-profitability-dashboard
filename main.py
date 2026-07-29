@@ -7,7 +7,7 @@ st.set_page_config(page_title="APL Logistics - Profitability Analytics",page_ico
 @st.cache_data
 def load_data():
     # Load dataset with correct encoding handling
-    df = pd.read_csv('compressed_data.csv', encoding='latin1')
+    df = pd.read_csv('compressed_data.csv.gz', encoding='latin1',compression='gzip',engine='python')
     # Financial Validation: Ensure key fields are numeric
     df['Sales'] = pd.to_numeric(df['Sales'], errors='coerce')
     df['Benefit per order'] = pd.to_numeric(df['Benefit per order'], errors='coerce')
