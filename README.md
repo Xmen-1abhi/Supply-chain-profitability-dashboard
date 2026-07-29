@@ -12,3 +12,4 @@ An interactive Streamlit dashboard to analyze sales performance, customer segmen
 `Python` `Streamlit` `Pandas` `Plotly` `Numpy`
 
 ##  How to Run
+** Streamlit link**: https://supply-chain-profitability-dashboard.streamlit.app
